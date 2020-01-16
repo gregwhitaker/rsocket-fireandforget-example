@@ -1,16 +1,14 @@
 plugins {
-    id 'java'
+    id "java"
+    id "application"
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
-
+mainClassName = 'example.count.client.CountClient'
 sourceCompatibility = 1.8
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation "io.rsocket:rsocket-core:${rsocketVersion}"
+    implementation "io.rsocket:rsocket-transport-netty:${rsocketVersion}"
+    implementation 'org.slf4j:slf4j-api:1.7.25'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
 }
