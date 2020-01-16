@@ -1,0 +1,4 @@
+rootProject.name = 'rsocket-fireandforget-example'
+include 'count-client'
+include 'count-service'
+
