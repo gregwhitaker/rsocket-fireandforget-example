@@ -1,4 +1,6 @@
 # rsocket-fireandforget-example
+![Build](https://github.com/gregwhitaker/rsocket-fireandforget-example/workflows/Build/badge.svg)
+
 An example of sending messages between applications with the fire-and-forget interaction model in [RSocket](http://rsocket.io).
 
 In this example the `count-client` streams integers from `1` to `1000` to the `count-service` using the fire-and-forget interaction model.
